@@ -1,0 +1,23 @@
+<div class="contenedor" *ngIf="proyecto">
+  <div class="imagen">
+    <img src="{{url + 'proyecto/get-file-imagen/' + proyecto.imagen}}" *ngIf="proyecto.imagen">
+    </div>
+    <div class="detalles">
+    <h1>{{proyecto.nombre}}</h1>
+    <h3>{{proyecto.descripcion}}</h3>
+    <p>{{proyecto.categoria}}</p>
+    <p>{{proyecto.lenguajes}}</p>
+
+    <p *ngIf="confirmar == false">
+      <a [routerLink]="['/editar-proyecto', proyecto._id]" class="boton-editar">Editar</a>
+      <a (click)="setConfirmar(true)" class="boton-borrar">Borrar</a>
+    </p>
+
+    <p *ngIf="confirmar == true">
+      <span class="confirmar">¿Seguro que deseas eliminar el proyecto?</span>
+      <a (click)="setConfirmar(false)" class="boton-editar">No</a>
+      <a (click)="deleteProyecto(proyecto._id)" class="boton-borrar">Si</a>
+    </p>
+  </div>
+</div>
+

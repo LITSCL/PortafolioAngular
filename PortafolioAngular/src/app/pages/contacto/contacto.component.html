@@ -1,0 +1,16 @@
+<div class="contenedor">
+  <div #texto> <!-- Este div tiene un ID, el cual se puede obtener mediante un ViewChild en el componente. -->
+    <p>Esta es la página de contacto, puedes enviar cualquier duda.</p>
+  </div>
+
+  <input type="number" [(ngModel)]="widthSlider">
+  <button (click)="cargarSlider()">Cargar Slider</button>
+  <button (click)="resetearSlider()">Resetear Slider</button>
+  
+  <div *ngIf="anchuraSlider">
+    <app-slider [anchura]="anchuraSlider" (conseguirAutor)="getAutor($event)"></app-slider> <!-- En la primera directiva se le envian datos a un componente hijo, en la segunda directiva se reciben datos enviados desde un componente hijo. --> 
+  </div>
+  <div *ngIf="autor">
+    {{autor.nombre + " " + autor.apellido + " " + autor.web}}
+  </div>
+</div>

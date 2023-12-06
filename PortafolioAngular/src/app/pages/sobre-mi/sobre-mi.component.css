@@ -1,0 +1,40 @@
+#titulo {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#titulo h1 {
+  font-family: FingerCustom;
+  font-size: 60px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+#titulo h2 {
+  font-size: 25px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sobre-mi {
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+.sobre-mi h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.sobre-mi p {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: justify;
+}

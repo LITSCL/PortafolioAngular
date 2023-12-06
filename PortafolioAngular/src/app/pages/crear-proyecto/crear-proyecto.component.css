@@ -1,0 +1,86 @@
+.contenedor {
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.contenedor h2 {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+form {
+  width: 50%;
+}
+
+form label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 80%;
+  padding: 5px;
+}
+
+button,
+input[type="submit"] {
+  display: block;
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 15px;
+  color: white;
+  background-color: rgba(53, 103, 164, 1);
+  border: 1px solid rgb(13, 67, 133, 1);
+  cursor: pointer;
+}
+
+form input[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background-color: rgba(53, 103, 164, 1);
+}
+
+form input[disabled]:hover {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background-color: rgba(53, 103, 164, 1);
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: rgba(53, 103, 164, 0.8);
+}
+
+.formulario-error {
+  padding: 3px;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+}
+
+.mensaje {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #eee;
+}
+
+.mensaje a {
+  color: white;
+}
+
+.exito {
+  background-color: green;
+  color: white;
+}
+
+.error {
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "63c4adce27d9bdeeeb3d25f9"
+  },
+  "nombre": "PrimerFullStack",
+  "descripcion": "Aplicación Crunchyroll",
+  "categoria": "Desarrollo WEB",
+  "lenguajes": "PHP, JavaScript",
+  "year": 2018,
+  "imagen": "8ohkj21bDv0SC2H0BWdgu70K.png"
+},{
+  "_id": {
+    "$oid": "63c4ae1b27d9bdeeeb3d2603"
+  },
+  "nombre": "SegundoFullStack",
+  "descripcion": "Aplicación Funimation",
+  "categoria": "Desarrollo WEB",
+  "lenguajes": "Java, JavaScript",
+  "year": 2019,
+  "imagen": "z6Sfxkvb6b_9ZtOe5C4uHP2O.png"
+},{
+  "_id": {
+    "$oid": "63c4ae4627d9bdeeeb3d2608"
+  },
+  "nombre": "TercerFullStack",
+  "descripcion": "Aplicación Inacap",
+  "categoria": "Desarrollo WEB",
+  "lenguajes": "C#, JavaScript",
+  "year": 2020,
+  "imagen": "ZY6zP9LW172bSA4ClGAbkefA.png"
+},{
+  "_id": {
+    "$oid": "6419f2b452028824aa713b1b"
+  },
+  "nombre": "CuartoFullStack",
+  "descripcion": "Aplicación Cuatica",
+  "categoria": "Desarrollo WEB",
+  "lenguajes": "Ruby, JavaScript",
+  "year": 2021,
+  "imagen": "0f9rXVnY79O7TAi45QNSm099.png"
+},{
+  "_id": {
+    "$oid": "6419f2cc52028824aa713b1f"
+  },
+  "nombre": "QuintoFullStack",
+  "descripcion": "Aplicación Cuatica",
+  "categoria": "Desarrollo WEB",
+  "lenguajes": "Dart, JavaScript",
+  "year": 2022,
+  "imagen": "fX4MDulpLBYJcTh1O_PM92rQ.png"
+},{
+  "_id": {
+    "$oid": "6419f2dc52028824aa713b23"
+  },
+  "nombre": "SextoFullStack",
+  "descripcion": "Aplicación Cuatica",
+  "categoria": "Desarrollo WEB",
+  "lenguajes": "C++, JavaScript",
+  "year": 2023,
+  "imagen": "Tf_6Whe2-m5V3_R9nB-2MhSy.png"
+}]

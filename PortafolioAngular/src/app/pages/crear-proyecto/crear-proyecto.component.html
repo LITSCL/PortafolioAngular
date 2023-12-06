@@ -1,0 +1,59 @@
+<div class="contenedor" *ngIf="proyecto">
+<h2>{{titulo}}</h2>
+
+<div class="mensaje exito" *ngIf="estado == 'exito' && proyectoGuardado">
+  El proyecto se ha creado correctamente, puedes verlo <a [routerLink]="['/detalle', proyectoGuardado._id]">Aquí</a>
+</div>
+
+<div class="mensaje error" *ngIf="estado == 'error'">
+  El proyecto no se ha podido crear
+</div>
+
+<form #formProyecto="ngForm" (ngSubmit)="onSubmit(formProyecto)">
+<p>
+  <label for="nombre">Nombre</label>
+  <input type="text" name="name" #nombre="ngModel" [(ngModel)]="proyecto.nombre" required>
+</p>
+<span class="formulario-error" *ngIf="nombre.touched && !nombre.valid">
+  El nombre es obligatorio
+</span>
+<p>
+  <label for="descripcion">Descripción</label>
+  <textarea type="text" name="descripcion" #descripcion="ngModel" [(ngModel)]="proyecto.descripcion" required></textarea>
+</p>
+<span class="formulario-error" *ngIf="descripcion.touched && !descripcion.valid">
+  La descripción es obligatoria
+</span>
+<p>
+  <label for="categoria">Categoría</label>
+  <input type="text" name="categoria" #categoria="ngModel" [(ngModel)]="proyecto.categoria" required>
+</p>
+<span class="formulario-error" *ngIf="categoria.touched && !categoria.valid">
+  La categoría es obligatoria
+</span>
+<p>
+  <label for="lenguajes">Lenguajes</label>
+  <input type="text" name="lenguajes" #lenguajes="ngModel" [(ngModel)]="proyecto.lenguajes" required>
+</p>
+<span class="formulario-error" *ngIf="lenguajes.touched && !lenguajes.valid">
+  Los lenguajes son obligatorios
+</span>
+<p>
+  <label for="year">Año</label>
+  <input type="number" name="year" #year="ngModel" [(ngModel)]="proyecto.year" required>
+</p>
+<span class="formulario-error" *ngIf="year.touched && !year.valid">
+  El año no es válido
+</span>
+<p>
+  <label for="imagen">Imagen del proyecto</label>
+  <span *ngIf="proyecto.imagen">
+    <img src="{{url + 'proyecto/get-file-imagen/' + proyecto.imagen}}" *ngIf="proyecto.imagen" width="310px">
+  </span>
+  <br/>
+  <input type="file" name="imagen" (change)="fileChangeEvent($event)" required> <!-- El evento change se ejecuta cuando hay un cambio en el valor de entrada (Cuando seleccionas o cambias un archivo). -->     
+</p>
+
+<input type="submit" value="Enviar" [disabled]="!formProyecto.form.valid">
+</form>
+</div>
